@@ -129,20 +129,10 @@
             <h1>TCG Gamu!</h1>
             <h2>Bienvenidos a nuestra tienda online de cartas nipon</h2>
           </div>
-          <div class="swiper mySwiper flex-column justify-content-center">
-            <swiper-container
-              class="mySwiper"
-              loop="true"
-              effect="coverflow"
-              grab-cursor="true"
-              centered-slides="true"
-              slides-per-view="auto"
-              coverflow-effect-rotate="15"
-              coverflow-effect-stretch="0"
-              coverflow-effect-depth="100"
-              coverflow-effect-modifier="1"
-              coverflow-effect-slide-shadows="true"
-            >
+          <div class=" swiper mySwiper flex-column justify-content-center">
+            <swiper-container class="mySwiper" effect="coverflow" grab-cursor="true" centered-slides="true"
+            slides-per-view="auto" coverflow-effect-rotate="15" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+            coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">  
               <swiper-slide>
                 <img src="imagenes/Pokemon/BaseSet/Abra.jpeg" alt="Abra" >
               </swiper-slide>
@@ -273,14 +263,11 @@
             </div>
 
             <div class="team-img-box col-12 col-md-6 col-sm-12">
-              <div class="imageteam col-sm-12 pt-sm-5">
-                <img src="/imagenes/team-tcg.jpg" alt="Nuestro equipo" >
-                <img src="/imagenes/lugar-tcg.jpg" alt="Nuestro lugar" >
-                <div class="frase m-3 p-4 shadow">
-                  <p>
-                    ¡Únete a nuestra comunidad hoy y descubre lo que nos hace
-                    diferentes en el mundo de las cartas coleccionables!
-                  </p>
+              <div class="imageteam col-sm-12">
+                <img src="/imagenes/team-tcg.jpg" alt="Nuestro equipo">
+                <img src="/imagenes/lugar-tcg.jpg" alt="Nuestro lugar">
+                <div class="frase m-3 p-4">
+                  <p>¡Únete a nuestra comunidad hoy y descubre lo que nos hace diferentes en el mundo de las cartas coleccionables!</p>
                 </div>
               </div>
             </div>
@@ -337,132 +324,127 @@
       </section>
 
       <section id="contacto">
+        <!-- Contactanos -- Form de contacto ------------------------------------------------------------------------------------------------------->
         <div class="contactobox">
-          <h1>Contactanos</h1>
-          <form
-            id="fs-frm"
-            name="simple-contact-form"
-            accept-charset="utf-8"
-            action="https://formspree.io/f/mwkgzyjk"
-            method="post"
-          >
-            <table>
-              <tbody>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td rowspan="8" style="vertical-align: top;">
-                    <img
-                      src="imagenes/contactanos.png" alt="contactanos"
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <label for="full-name">Nombre y Apellido:</label>
-                  </td>
-                  <td>
-                    <input
-                      type="text"
-                      name="name"
-                      id="full-name"
-                      placeholder="Ej: Juan Perez"
-                      required
-                     >
-                  </td>
-                  
-                </tr>
-                <tr>
-                  <td>
-                    <label for="email-address">Correo electrónico: </label>
-                  </td>
-                  <td>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email-address"
-                      placeholder="Ej: correo@gmail.com"
-                      required
-                     >
-                  </td>
-                  
-                </tr>
-                <tr>
-                  <td>
-                    <label for="phone">Telefono de contacto: </label>
-                  </td>
-                  <td>
-                    <input
-                      type="tel"
-                      name="phone"
-                      id="phone"
-                      size="20"
-                      minlength="9"
-                      maxlength="14"
-                      placeholder="Ej: 110123456"
-                      required
-                     >
-                  </td>
-                  
-                </tr>
-                <tr>
-                  <td>
-                    <label for="phone">Tipo de telefono: </label>
-                  </td>
-                  <td>
-                    <select name="Tipo" id="tipo">
-                      <option value="1" selected>Celular</option>
-                      <option value="2">Fijo</option>
-                    </select>
-                  </td>
-                  
-                </tr>
-                <tr>
-                  <td>
-                    <label for="cartas">Temas: </label>
-                  </td>
-                  <td>
-                    <input type="radio" id="cartas" name="tema" value="1" >
-                    Cartas
-                    <input type="radio" id="albums" name="tema" value="2" >
-                    Albums
-                    <input type="radio" id="stickers" name="tema" value="3" >
-                    Stickers
-                    <input type="radio" id="otros" name="tema" value="4" >
-                    Otros...
-                  </td>
-                  
-                </tr>
-                <tr>
-                  <td>
-                    <label for="message">Mensaje:</label>
-                  </td>
-                  <td>
-                    <textarea
-                      rows="5"
-                      name="message"
-                      id="message"
-                      placeholder="Ingrese aquí su consulta......"
-                      required
-                    ></textarea>
-                  </td>
-                  
-                </tr>
-                <tr>
-                  <td colspan="2" style="text-align: right">
-                    <input
-                      type="hidden"
-                      name="_subject"
-                      id="email-subject"
-                      value="Contact Form Submission"
-                     >
-                    <input type="button" onclick="validar()" value="Enviar" >
-                  </td>
-                  
-                </tr>
-              </tbody>
-            </table>
-          </form>
+          <h1>Contáctanos</h1>
+          <div class="contactoform">
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mwkgzyjk" method="post">
+              <table>
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td rowspan="8" style="vertical-align: top;">
+                      <img
+                        src="imagenes/contactanos.png" alt="contactanos">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="full-name">Nombre y Apellido:</label>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        name="name"
+                        id="full-name"
+                        placeholder="Ej: Juan Perez"
+                        required
+                       >
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="email-address">Correo electrónico: </label>
+                    </td>
+                    <td>
+                      <input
+                        type="email"
+                        name="email"
+                        id="email-address"
+                        placeholder="Ej: correo@gmail.com"
+                        required
+                       >
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="phone">Telefono de contacto: </label>
+                    </td>
+                    <td>
+                      <input
+                        type="tel"
+                        name="phone"
+                        id="phone"
+                        size="20"
+                        minlength="9"
+                        maxlength="14"
+                        placeholder="Ej: 110123456"
+                        required
+                       >
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="phone">Tipo de telefono: </label>
+                    </td>
+                    <td>
+                      <select name="Tipo" id="tipo">
+                        <option value="1" selected>Celular</option>
+                        <option value="2">Fijo</option>
+                      </select>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="cartas">Temas: </label>
+                    </td>
+                    <td>
+                      <input type="radio" id="cartas" name="tema" value="1" >
+                      Cartas
+                      <input type="radio" id="albums" name="tema" value="2" >
+                      Albums
+                      <input type="radio" id="stickers" name="tema" value="3" >
+                      Stickers
+                      <input type="radio" id="otros" name="tema" value="4" >
+                      Otros...
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="message">Mensaje:</label>
+                    </td>
+                    <td>
+                      <textarea
+                        rows="5"
+                        name="message"
+                        id="message"
+                        placeholder="Ingrese aquí su consulta......"
+                        required
+                      ></textarea>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td colspan="2" style="text-align: right">
+                      <input
+                        type="hidden"
+                        name="_subject"
+                        id="email-subject"
+                        value="Contact Form Submission"
+                       >
+                      <input type="button" onclick="validar()" value="Enviar" >
+                    </td> 
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </div>
 
           <!-- Modal -->
           <div
@@ -506,26 +488,24 @@
               </div>
             </div>
           </div>
+          
         </div>
       </section>
-    </main>
-    <footer>
-      <div class="container-fluid">
-        <div class="siguenos row-cols-6 m-0">
-          <div class="siguered col-12 col-md-4 m-4">
-            <h3 id="tituloredes" class="d-lg-inline">Síguenos en:</h3>
-            <img src="/logos/twitter.png" alt="twitter" >
-            <img src="/logos/youtube.png" alt="youtube" >
-            <img src="logos/instagram.png" alt="instagram" >
-          </div>
-        </div>
-      </div>
-      <p>
-        Copyright 2024 © <strong> TCG Gamu!</strong> - Todos los derechos
-        reservados.
-      </p>
-      <p>Diseñado por grupo 11- Comisión 24183</p>
-    </footer>
-    <script src="scripts/contactos.js"></script>
-  </body>
+  </main>
+  <footer>
+    <div class="container-fluid">
+      <div class="siguenos row-cols-6 m-0" >
+        <div class="siguered col-12 col-md-4 m-4">
+          <h3 id="tituloredes" class="d-lg-inline">Síguenos en:</h3>
+          <img src="/logos/twitter.png" alt="twitter">
+          <img src="/logos/youtube.png" alt="youtube">
+          <img src="logos/instagram.png" alt="instagram">
+        </div>  
+    </div>
+  </div>
+    <p>Copyright 2024 © <strong> TCG Gamu!</strong> - Todos los derechos reservados.</p>
+    <p>Diseñado por grupo 11- Comisión 24183</p>
+  </footer> 
+<script src="scripts\contactos.js"></script>
+</body>
 </html>

@@ -27,7 +27,12 @@
         justify-content: center;
         min-height: 10vh;
     }
+    .contactoform{
+        display: flex;
+        justify-items: center;
+    }
 }
+
 @media only screen and (max-width: 768px) {
     .contactoform{
         display: flex;

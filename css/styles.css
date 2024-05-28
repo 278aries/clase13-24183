@@ -180,7 +180,7 @@ swiper-slide img {
                 label{
                     font-weight: bold;
                 }
-                input[type="text"],input[type="email"], select, textarea{
+                input[type="text"],input[type="email"],input[type="tel"], select, textarea{
                     width: 100%;
                 }
 
@@ -189,6 +189,10 @@ swiper-slide img {
                     /* background-color: rgb(40, 192, 40); */
                     /* color: black; */
                     font-weight: bold;
+                }
+                input[type="radio"]{
+                    margin-left: 5px;
+
                 }
             }
         }

@@ -106,7 +106,10 @@ swiper-slide {
     width: 250px;
     height: 400px;
   }
-
+  .swiper {
+    overflow: clip;
+  }
+  
 swiper-slide img {
     display: block;
     width: 100%;

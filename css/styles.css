@@ -18,7 +18,7 @@ h1{
     padding: 30px;
 }
 
-/* Navegador - Título */
+/* Barra de navegación ------------------------------------------------------------------------------------------------------------------------------------------*/
 .nav-brand{
     text-decoration: none;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -33,7 +33,6 @@ h1{
     letter-spacing: 3px;
     color: #f8f7fa;
 }
-/* Navegador - Estilos */
 .logonav{
     width: 60px;
     height: 60px;
@@ -61,9 +60,7 @@ header{
     padding-top: 9em;
 }
 
-
-
-/* Inicio - Bienvenidos--------------------------------------------------------------------------- */
+/* Inicio - Bienvenidos------------------------------------------------------------------------------------------------------------------------------------------- */
 #bienvenidos>h2{
 text-align: center;
 animation: floating 3s infinite ease-in-out;
@@ -80,6 +77,13 @@ margin-bottom: 5vh;
     font-size: 9vh;
     color: #d88014;
     
+}
+
+/* Caja de texto */
+.cajaTexto{
+    background-color: #8acac0;
+    padding: 1em;
+    margin: 1em;
 }
 
 /* Sliders -------------------------------------------------------------------------------------------------------------------------- */
@@ -109,19 +113,13 @@ swiper-slide {
   .swiper {
     overflow: clip;
   }
-  
+
 swiper-slide img {
     display: block;
     width: 100%;
     -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0002, #0004);
   }
 
-/* Caja de texto */
-.cajaTexto{
-    background-color: #8acac0;
-    padding: 1em;
-    margin: 1em;
-}
 /* Sección - ¿Quienes somos? ------------------------------------------------------------------------------------------------------------------------------*/
 #quienesomos{
     padding: 4%;
@@ -170,7 +168,7 @@ swiper-slide img {
     font-stretch: expanded;
     line-height: 2em;
 }
-/* Contactanos - Formulario de contacto --------------------------------------------------------------------------------- */
+/* Contactanos - Formulario de contacto -------------------------------------------------------------------------------------------------------------------------- */
 #fs-frm{
     table{
         /* border: 1px solid #c00; */
@@ -199,7 +197,7 @@ swiper-slide img {
 
 }
 
-/* Footer - Pie de la página --------------------------------------------------------------------------------- */
+/* Footer - Pie de la página ------------------------------------------------------------------------------------------------------------------ */
 footer{
     background-color: #105586;
     padding: 10px;
@@ -225,9 +223,3 @@ p > footer {
     margin: 10px;
     font-size: small;
 }
-
-/* *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-} */

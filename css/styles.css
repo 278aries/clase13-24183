@@ -183,7 +183,9 @@ swiper-slide img {
                 input[type="text"],input[type="email"],input[type="tel"], select, textarea{
                     width: 100%;
                 }
-
+                img{
+                    width: 50%;
+                }
                 input[type="button"]{
                     /* border:2px dotted red; */
                     /* background-color: rgb(40, 192, 40); */

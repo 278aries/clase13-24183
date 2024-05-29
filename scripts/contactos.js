@@ -12,8 +12,8 @@ function validar(){
     if(nomape.value !== "" && mail.value !== ""  && (tema !== null && tema.value > 0) && msg.value !== "" && phone.value !==""){
         if(validarEmail(mail.value) && validarPhone(phone.value)){
             var frm = document.getElementById("fs-frm")
-            // frm.submit()
-            alert('Enviado')
+             frm.submit()
+            //alert('Enviado')
         }else{
             var errtext = document.getElementById("error-form")
             errtext.innerHTML = (!validarEmail(mail.value) ? "<br>Correo Electrónico" : "") + 

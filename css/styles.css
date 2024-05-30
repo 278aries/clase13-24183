@@ -3,6 +3,18 @@
 *{
     font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
 }
+p{
+    text-align: justify;
+}
+html, body {
+    position: relative;
+    height: 100%;
+  }
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 @media(760px <= width)
 {
@@ -63,7 +75,7 @@ div.sticky {
 
 h1{
     font-family: "Rowdies", sans-serif;
-    text-align:left ;
+    text-align:left;
     font-weight: bolder;
     padding: 30px;
 }
@@ -130,22 +142,26 @@ margin-bottom: 5vh;
 }
 
 /* Caja de texto */
+.contenidointro{
+    background: #dba214;
+    width: 100%;
+    padding: 0.1%;
+    border-radius: 8%;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06), 0 9px 20px
+}
 .cajaTexto{
     background-color: #8acac0;
     padding: 1em;
     margin: 1em;
+    border-radius: 10%;
+}
+.cajaTexto>p{
+    padding: 5%;
+
 }
 
 /* Sliders -------------------------------------------------------------------------------------------------------------------------- */
-html, body {
-      position: relative;
-      height: 100%;
-    }
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 swiper-container {
     width: 85%;
@@ -198,6 +214,10 @@ swiper-slide img {
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06), 0 9px 20px;
 }
+.details-team-item>p{
+text-align: center;
+}
+
 .team-card-box{
     display: flex;
     justify-content: center;
@@ -220,6 +240,7 @@ swiper-slide img {
     font-size: larger;
     font-stretch: expanded;
     line-height: 2em;
+    text-align: center;
 }
 
 .proycatal{
@@ -232,21 +253,39 @@ swiper-slide img {
     background: #f2f2f2;
 
 } */
+
+/* Sección - Catálogo------------------------------------------------------------------------------- */
 .contenedor-imagenes{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    width: 80%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
 }
-.contenedor-imagenes img{
-    margin: auto;
-    border-radius: 10%;
-    display: block;
-    width: 15%;
+.contenedor-imagenes>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     box-shadow: 0 0 8px rgb(0, 0, 0, .4);
-
+    border-radius: 10%;
+    transition: 1s;
+}
+.contenedor-imagenes>img:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+.copy{
+    padding: 3% 2%;
+}
+.catalogoTitulo{
+    padding-bottom: 0;
 }
 
-/* Contactanos - Formulario de contacto -------------------------------------------------------------------------------------------------------------------------- */
+/* Sección - Contactanos - Formulario de contacto -------------------------------------------------------------------------------------------------------------------------- */
+.contactobox>h1{
+    padding-bottom: 0;
+}
 #contacto{
     padding: 4%;
     padding-right: 2%;
@@ -296,12 +335,12 @@ footer{
     color: #DFDBE5;
 }
 
-p > footer {
+footer > p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: lighter;
     display: flex;
     text-align: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .siguered>img{

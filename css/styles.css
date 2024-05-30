@@ -311,7 +311,7 @@ footer{
     color: #DFDBE5;
 }
 
-p > footer {
+footer > p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: lighter;
     display: flex;

@@ -60,20 +60,35 @@
         style="background-color: #105586"
       >
         <div class="container fluid">
-          <!-- Logo de prueba con Bootstrap-->
+          <div>
+             <!-- Logo de prueba con Bootstrap-->
           <a class="nav-brand" href="#">
             <img class="logonav" src="logos/tcgCard.png" alt="logo img" >
             <span id="logotitle">TCG Gamu!</span>
           </a>
+          </div>
+         
           <!-- Botón del menú -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menu"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <div class="elementosNav">
+
+            <div class="d-flex">
+              <button class="navbar-toggler"
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#menu"
+              >
+              <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <button class="btn btn-primary d-inline me-3" 
+              type="button" 
+              data-bs-toggle="offcanvas" 
+              data-bs-target="#offcanvasWithBothOptions" 
+              aria-controls="offcanvasWithBothOptions">
+                <img class="logo-shop" src="logos/logoshopcart.png">
+              <p class="d-none d-md-inline">Mi carrito</p>
+              </button>
+            </div>
 
           <!-- Elementos del menú colapsable responsivos -->
           <div class="collapse navbar-collapse" id="menu">
@@ -118,8 +133,24 @@
               </ul>
             </div>
           </div>
+          </div>
         </div>
       </nav>
+
+      <!-- Sección de carrito de compras -->
+      <div class="offcanvas offcanvas-end container-fluid" 
+      data-bs-scroll="true" 
+      tabindex="-1" 
+      id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Mi carrito</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p> Tabla de productos a comprar</p>
+        </div>
+      </div>
     </header>
 
     <main>

@@ -366,7 +366,7 @@ form {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #390e8c;
+    background-color: #ffffff;
     border: 1px solid lightslategray;
     border-radius: 5px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
@@ -376,7 +376,7 @@ table {
     max-width: 90%;
     margin: 0 auto;
     padding: 20px;
-    background-color: #390e8c;
+    background-color: #ffffff;
     border: 1px solid lightslategray;
     border-radius: 5px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
@@ -399,7 +399,7 @@ textarea {
 
 input[type="submit"] {
     padding: 10px;
-    background-color: #007bff;
+    background-color: #2d8b68;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -407,7 +407,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #477ab1;
 }
 
 button {
@@ -424,23 +424,7 @@ button:hover {
     background-color: #fcfdff;
 }
 
-a {
-    padding: 8px;
-    margin:4px;
-    background-color: #fdab13;
-    color: #1d1a39;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 85%;
-    font-weight: 800;
-}
 
-a:hover {
-    background-color: #1d1a39;
-    color:#fdab13
-}
 
 /* Footer - Pie de la página ------------------------------------------------------------------------------------------------------------------ */
 footer{

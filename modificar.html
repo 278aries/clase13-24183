@@ -74,7 +74,7 @@
         function obtenerProducto(event) {
             event.preventDefault();
             codigo = document.getElementById('codigo').value;
-            fetch(URL + 'cartas/' + 1)
+            fetch(URL + 'cartas/' + codigo)
                 .then(response => {
                     if (response.ok) {
                         return response.json()
@@ -99,10 +99,10 @@
         // Muestra el formulario con los datos del producto
         function mostrarFormulario() {
             if (mostrarDatosProducto) {
+                document.getElementById('nombreModificar').value = nombre;
                 document.getElementById('descripcionModificar').value = descripcion;
-                document.getElementById('cantidadModificar').value = cantidad;
+                document.getElementById('franquiciaModificar').value = franquicia;
                 document.getElementById('precioModificar').value = precio;
-                document.getElementById('proveModificar').value = proveedor;
 
                 const imagenActual = document.getElementById('imagen-actual');
                 if (imagen_url && !imagenSeleccionada) { // Verifica si imagen_url no está vacía y no se ha seleccionado una imagen

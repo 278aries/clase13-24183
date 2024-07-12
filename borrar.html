@@ -26,7 +26,7 @@
     </table><br>
 
     <div class="contenedor-centrado">
-        <a href="crud.htmlq">Menu principal</a>
+        <a href="crud.html">Menu principal</a>
     </div>
 
     <script>
@@ -45,11 +45,11 @@
                     data.forEach(carta => {
                         const row = cartasTable.insertRow();
                         row.innerHTML = `
-                            <td>${carta.id_carta}</td>
-                            <td>${carta.nombre}</td>
-                            <td>${carta.descripcion}</td>
-                            <td>${carta.franquicia}</td>
-                            <td align="right">${carta.precio}</td>
+                            <td>${cartas.id_carta}</td>
+                            <td>${cartas.nombre}</td>
+                            <td>${cartas.descripcion}</td>
+                            <td>${cartas.franquicia}</td>
+                            <td align="right">${cartas.precio}</td>
                             <td><button onclick="eliminarProducto('${carta.id_carta}')">Eliminar</button></td>
                         `;
                     });

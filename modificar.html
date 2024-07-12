@@ -26,11 +26,14 @@
         <div id="datos-producto" style="display: none;">
             <h2>Datos de la Carta</h2>
             <form id="form-guardar-cambios">
+                <label for="nombreModificar">Nombre:</label>
+                <input type="text" id="nombreModificar" required><br>
+
                 <label for="descripcionModificar">Descripción:</label>
                 <input type="text" id="descripcionModificar" required><br>
 
-                <label for="cantidadModificar">Cantidad:</label>
-                <input type="number" id="cantidadModificar" required><br>
+                <label for="franquiciaModificar">Franquicia:</label>
+                <input type="text" id="franquiciaModificar" required><br>
 
                 <label for="precioModificar">Precio:</label>
                 <input type="number" step="0.01" id="precioModificar" required><br>
@@ -95,7 +98,6 @@
                     alert('Código no encontrado.');
                 });
         }
-
         // Muestra el formulario con los datos del producto
         function mostrarFormulario() {
             if (mostrarDatosProducto) {

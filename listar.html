@@ -49,7 +49,7 @@
                 // Iteramos sobre cada producto y agregamos filas a la tabla
                 for (let carta of data) {
                     let fila = document.createElement('tr'); //Crea una nueva fila de tabla (<tr>) para cada producto.
-                    fila.innerHTML = '<td>' + carta.codigo + '</td>' +
+                    fila.innerHTML = '<td>' + carta.id_carta + '</td>' +
                         '<td>' + carta.nombre + '</td>' +
                         '<td>' + carta.descripcion + '</td>' +
                         '<td align="center">' + carta.franquicia + '</td>' +

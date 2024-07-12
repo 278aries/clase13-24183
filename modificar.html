@@ -148,7 +148,7 @@
 
             // Si se ha seleccionado una imagen nueva, la añade al formData. 
             if (imagenSeleccionada) {
-                formData.append('imagen', imagenSeleccionada, imagenSeleccionada.name);
+                formData.append('imagen_url', imagenSeleccionada, imagenSeleccionada.name);
             }
 
             fetch(URL + 'cartas/' + codigo, {

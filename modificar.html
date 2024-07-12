@@ -60,10 +60,11 @@
 
         // Variables de estado para controlar la visibilidad y los datos del formulario
         let codigo = '';
+        let nombre = '';
         let descripcion = '';
+        let franquicia = '';
         let cantidad = '';
         let precio = '';
-        let proveedor = '';
         let imagen_url = '';
         let imagenSeleccionada = null;
         let imagenUrlTemp = null;
@@ -140,9 +141,11 @@
 
             const formData = new FormData();
             formData.append('codigo', codigo);
+            formData.append('nombre', document.getElementById('nombreModificar').value);
             formData.append('descripcion', document.getElementById('descripcionModificar').value);
-            formData.append('cantidad', document.getElementById('cantidadModificar').value);
-            formData.append('proveedor', document.getElementById('proveModificar').value);
+            formData.append('franquicia', document.getElementById('franquiciaModificar').value);
+            //formData.append('cantidad', document.getElementById('cantidadModificar').value);
+            //formData.append('proveedor', document.getElementById('proveModificar').value);
             formData.append('precio', document.getElementById('precioModificar').value);
 
             // Si se ha seleccionado una imagen nueva, la añade al formData. 
@@ -174,10 +177,10 @@
         // Restablece todas las variables relacionadas con el formulario a sus valores iniciales, lo que efectivamente "limpia" el formulario.
         function limpiarFormulario() {
             document.getElementById('codigo').value = '';
+            document.getElementById('nombreModificar').value = '';
             document.getElementById('descripcionModificar').value = '';
-            document.getElementById('cantidadModificar').value = '';
+            document.getElementById('franquiciaModificar').value = '';
             document.getElementById('precioModificar').value = '';
-            document.getElementById('proveModificar').value = '';
             document.getElementById('nuevaImagen').value = '';
 
             const imagenActual = document.getElementById('imagen-actual');

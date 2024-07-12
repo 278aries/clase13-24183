@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <h1>Modificar Productos del Inventario</h1><br>
+    <h1>Modificar Cartas</h1><br>
 
     <!-- Contenedor principal que será controlado por JavaScript. Este contenedor tendrá dos formularios. -->
     <div id="app">
@@ -86,10 +86,10 @@
                     }
                 })
                 .then(data => {
+                    nombre = data.nombre;
                     descripcion = data.descripcion;
-                    cantidad = data.cantidad;
+                    franquicia = data.franquicia;
                     precio = data.precio;
-                    proveedor = data.proveedor;
                     imagen_url = data.imagen_url;
                     mostrarDatosProducto = true; //Activa la vista del segundo formulario
                     mostrarFormulario();

@@ -67,7 +67,7 @@
                         return response.json(); 
                     } else {
                         // Si hubo un error, lanzar explícitamente una excepción
-                        // para ser "catcheada" más adelante
+                        // para ser "cacheada" más adelante
                         throw new Error('Error al agregar el producto.');
                     }
             })
@@ -82,7 +82,7 @@
                     alert('Error al agregar el producto.');
                 })
 
-                // Limpiar el formulario en ambos casos (éxito o error)
+                /* / Limpiar el formulario en ambos casos (éxito o error)
                 .finally(function () {
                     document.getElementById('nombre').value = "";
                     document.getElementById('descripcion').value = "";
@@ -91,6 +91,7 @@
                     document.getElementById('precio').value = "";
                     document.getElementById('imagen').value = "";
                 });
+                */
         })
     </script>
 </body>

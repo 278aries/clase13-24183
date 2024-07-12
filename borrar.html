@@ -45,13 +45,13 @@
                     data.forEach(cartas => {
                         const row = cartasTable.insertRow();
                         row.innerHTML = `
-                            <td>${carta.id_carta}</td>
-                            <td>${carta.nombre}</td>
-                            <td>${carta.descripcion}</td>
-                            <td>${carta.franquicia}</td>
-                            <td>${carta.precio}</td>
-                            <td align="right">${carta.precio}</td>
-                            <td><button onclick="eliminarProducto('${carta.id_carta}')">Eliminar</button></td>
+                            <td>${cartas.id_carta}</td>
+                            <td>${cartas.nombre}</td>
+                            <td>${cartas.descripcion}</td>
+                            <td>${cartas.franquicia}</td>
+                            <td>${cartas.precio}</td>
+                            <td align="right">${cartas.precio}</td>
+                            <td><button onclick="eliminarProducto('${cartas.id_carta}')">Eliminar</button></td>
                         `;
                     });
                 })

@@ -5,21 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agregar una Carta Nueva</title>
+    <title>Agregar Cartas</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar-index ">
-            <img class="logo-nav" src="./logos/tcgCard.png" alt="logo TcgCard">
-        </nav>
-    </header>
-
-    <div class="logo-centrado">
-        <img src="./logos/tcgCard.png" alt="logo">
-    </div>
-    <h1>Agregar Productos al Inventario</h1><br>
+    <h1>Agregar una Carta</h1><br>
 
     <!--enctype="multipart/form-data" es necesario para enviar archivos al back.-->
     <form id="formulario" enctype="multipart/form-data">
@@ -48,13 +39,9 @@
         <input type="file" id="imagenProducto" name="imagen">
         </label>
         
-        <br><br>
-        
-        <label for="proveedorProducto">Proveedor:</label>
-        <input type="text" id="proveedorProducto" name="proveedor">
-        
+        <br>
         <button type="submit">Agregar Carta</button>
-        
+        <br>
         <a href="crud.html">Administrar Cartas</a>
     </form>
 

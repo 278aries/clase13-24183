@@ -110,7 +110,7 @@
                 const imagenActual = document.getElementById('imagen-actual');
                 if (imagen_url && !imagenSeleccionada) { // Verifica si imagen_url no está vacía y no se ha seleccionado una imagen
 
-                    imagenActual.src = 'https://www.pythonanywhere.com/user/tcggamu/files/home/tcggamu/mysite/static/imagenes/' + imagen_url;
+                    imagenActual.src = 'https://www.pythonanywhere.com/user/tcggamu/files/home/tcggamu/mysite/static/imagenes/' + imagen;
 
                     imagenActual.style.display = 'block'; // Muestra la imagen actual
                 } else {
@@ -127,7 +127,6 @@
             const file = event.target.files[0];
             imagenSeleccionada = file;
             imagenUrlTemp = URL.createObjectURL(file); // Crea una URL temporal para la vista previa
-            alert (imagenUrlTemp);
             const imagenVistaPrevia = document.getElementById('imagen-vista-previa');
             imagenVistaPrevia.src = imagenUrlTemp;
             imagenVistaPrevia.style.display = 'block';

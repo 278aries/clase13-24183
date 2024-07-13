@@ -91,7 +91,7 @@
                     descripcion = data.descripcion;
                     franquicia = data.franquicia;
                     precio = data.precio;
-                    imagen_url = data.imagen_url;
+                    imagen = data.imagen_url;
                     mostrarDatosProducto = true; //Activa la vista del segundo formulario
                     mostrarFormulario();
                 })
@@ -110,13 +110,12 @@
                 const imagenActual = document.getElementById('imagen-actual');
                 if (imagen_url && !imagenSeleccionada) { // Verifica si imagen_url no está vacía y no se ha seleccionado una imagen
 
-                    imagenActual.src = 'https://www.pythonanywhere.com/user/tcggamu/files/home/tcggamu/mysite/static/imagenes/' + imagen_url;
+                    imagenActual.src = 'https://www.pythonanywhere.com/user/tcggamu/files/home/tcggamu/mysite/static/imagenes/' + imagen;
 
                     imagenActual.style.display = 'block'; // Muestra la imagen actual
                 } else {
                     imagenActual.style.display = 'none'; // Oculta la imagen si no hay URL
                 }
-
                 document.getElementById('datos-producto').style.display = 'block';
             } else {
                 document.getElementById('datos-producto').style.display = 'none';

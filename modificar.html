@@ -73,7 +73,8 @@
         document.getElementById('form-guardar-cambios').addEventListener('submit', guardarCambios);
         document.getElementById('nuevaImagen').addEventListener('change', seleccionarImagen);
 
-        // Se ejecuta cuando se envía el formulario de consulta. Realiza una solicitud GET a la API y obtiene los datos del producto correspondiente al código ingresado.
+        // Se ejecuta cuando se envía el formulario de consulta. 
+        // Realiza una solicitud GET a la API y obtiene los datos del producto correspondiente al código ingresado.
         function obtenerProducto(event) {
             event.preventDefault();
             codigo = document.getElementById('codigo').value;
@@ -148,7 +149,7 @@
 
             // Si se ha seleccionado una imagen nueva, la añade al formData. 
             if (imagenSeleccionada) {
-                formData.append('imagen_url', imagenSeleccionada, imagenSeleccionada.name);
+                formData.append('imagen', imagenSeleccionada, imagenSeleccionada.name);
             }
 
             fetch(URL + 'cartas/' + codigo, {

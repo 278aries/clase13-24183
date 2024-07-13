@@ -63,14 +63,14 @@
         }
 
         // Se utiliza para eliminar un producto.
-        function eliminarProducto(id_carta) {
+        function eliminarCarta(id_carta) {
             // Se muestra un diálogo de confirmación. Si el usuario confirma, se realiza una solicitud DELETE al servidor a través de fetch(URL + 'productos/${codigo}', {method: 'DELETE' }).
             if (confirm('¿Estás seguro de que quieres eliminar este producto?')) {
                 fetch(URL + `cartas/${id_carta}`, { method: 'DELETE' })
                     .then(response => {
                         if (response.ok) {
                             // Si es exitosa (response.ok), elimina el producto y da mensaje de ok.
-                            obtenerProductos(); // Vuelve a obtener la lista de productos para actualizar la tabla.
+                            obtenerCartas(); // Vuelve a obtener la lista de productos para actualizar la tabla.
                             alert('carta eliminada correctamente.');
                         }
                     })
@@ -82,7 +82,7 @@
         }
 
         // Cuando la página se carga, llama a obtenerProductos para cargar la lista de productos.
-        document.addEventListener('DOMContentLoaded', obtenerProductos);
+        document.addEventListener('DOMContentLoaded', obtenerCartas);
     </script>
 </body>
 </html>

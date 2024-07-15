@@ -146,10 +146,15 @@
         <thead> 
             <tr>
                 <th>Código</th>
+                <th></th>
                 <th>Nombre</th>
+                <th></th>
                 <th>Descripción</th>
+                <th></th>
                 <th>Franquicia</th>
+                <th></th>
                 <th align="right">Precio</th>
+                <th></th>
                 <th>Acciones</th>
             </tr>
         </thead>
@@ -178,10 +183,15 @@
                         const row = cartasTable.insertRow();
                         row.innerHTML = `
                             <td>${cartas.id_carta}</td>
+                            <td></td>
                             <td>${cartas.nombre}</td>
+                            <td></td>
                             <td>${cartas.descripcion}</td>
+                            <td></td>
                             <td>${cartas.franquicia}</td>
+                            <td></td>
                             <td align="right">${cartas.precio}</td>
+                            <td></td>
                             <td><button onclick="eliminarCarta('${cartas.id_carta}')">Eliminar</button></td>
                         `;
                     });
